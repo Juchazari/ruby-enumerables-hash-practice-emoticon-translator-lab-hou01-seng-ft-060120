@@ -22,8 +22,6 @@ def get_english_meaning(path, emoticon)
     value.each do |inner_key, inner_value|
       if inner_value == emoticon
         english_meaning = key
-      else
-        english_meaning = "Sorry, that emoticon was not found"
       end
     end
   end
