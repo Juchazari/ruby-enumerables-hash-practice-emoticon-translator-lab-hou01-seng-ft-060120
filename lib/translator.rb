@@ -4,7 +4,7 @@ require 'yaml'
 def load_library(path)
   updated_emoticons_library = {}
   YAML.load_file(path).each do |emotion, emoticons|
-    emotes_paired = {:english => emoticons[0], :japanese => emoticons[1]}
+    eng_jp_emoticons = {:english => emoticons[0], :japanese => emoticons[1]}
     some_fixed_hash[emotion] = emotes_paired
     #binding.pry
   end
