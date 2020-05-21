@@ -6,6 +6,7 @@ def load_library(library)
     testing_hash = emoticons.each_with_object({}) do |(x, y), z|
       z[:engish] = x
       z[:japanese] = y
+      binding.pry
     end
   end
 end
