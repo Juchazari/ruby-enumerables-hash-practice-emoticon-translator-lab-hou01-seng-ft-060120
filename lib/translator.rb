@@ -7,8 +7,8 @@ def load_library(library)
     some_other_var = {:english => emoticons[0], :japanese => emoticons[1]}
     some_hash[emotion] = some_other_var
     some_hash
-    binding.pry
   end
+  binding.pry
 end
 
 def get_japanese_emoticon
