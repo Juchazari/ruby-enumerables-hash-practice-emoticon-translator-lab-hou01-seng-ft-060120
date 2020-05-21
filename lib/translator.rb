@@ -3,7 +3,7 @@ require 'yaml'
 
 def load_library(library)
   fixed_emoticons_hash = YAML.load_file(library).map do |emotion, emoticons|
-    some_hash = {emotion}
+    some_hash = {}
     some_other_var = {:english => emoticons[0], :japanese => emoticons[1]}
     some_hash[emotion] = some_other_var
     binding.pry
