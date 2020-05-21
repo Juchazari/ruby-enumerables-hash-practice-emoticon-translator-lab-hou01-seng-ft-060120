@@ -5,7 +5,7 @@ def load_library(path)
   updated_emoticons_library = {}
   YAML.load_file(path).each do |emotion, emoticons|
     eng_jp_emoticons = {:english => emoticons[0], :japanese => emoticons[1]}
-    updated_emoticons_library[emotion] = emotes_paired
+    updated_emoticons_library[emotion] = eng_jp_emoticons
     #binding.pry
   end
   binding.pry
