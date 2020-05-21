@@ -8,6 +8,7 @@ def load_library(path)
     updated_emoticons_library[emotion] = eng_jp_emoticons
     #binding.pry
   end
+  updated_emoticons_library
   binding.pry
 end
 
