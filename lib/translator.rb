@@ -5,7 +5,7 @@ def load_library(library)
   fixed_emoticons_hash = YAML.load_file(library).each do |emotion, emoticons|
     testing_hash = emoticons.each_with_object({}) do |(x, y), z|
       z[:engish] = x
-      z[:japanese] = y
+      z[:japanese] = x
       binding.pry
     end
   end
