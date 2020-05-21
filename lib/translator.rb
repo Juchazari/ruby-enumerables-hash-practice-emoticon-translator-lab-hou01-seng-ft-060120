@@ -21,7 +21,7 @@ def get_english_meaning(path, emoticon)
   emoticons_library.each do |key, value|
     value.each do |inner_key, inner_value|
       if inner_value == emoticon
-        return key
+        english_meaning = key
       end
     end
   end
