@@ -3,9 +3,9 @@ require 'yaml'
 
 def load_library(library)
   fixed_emoticons_hash = YAML.load_file(library).each do |emotion, emoticons|
-    emoticons
+    emoticons.each_with_object({}) do |(x, y), z|
+    end
   end
-  binding.pry
 end
 
 def get_japanese_emoticon
