@@ -1,7 +1,7 @@
 require 'pry'
 require 'yaml'
 
-def load_library(library)
+def load_library(path)
   updated_emoticons_library = {}
   YAML.load_file(library).map do |emotion, emoticons|
     emotes_paired = {:english => emoticons[0], :japanese => emoticons[1]}
