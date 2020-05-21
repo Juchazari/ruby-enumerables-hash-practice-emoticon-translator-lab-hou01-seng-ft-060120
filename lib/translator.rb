@@ -3,8 +3,8 @@ require 'yaml'
 
 def load_library(library)
   emoticons = YAML.load_file(library).each do |meaning, emoticons|
-    binding.pry
   end
+  binding.pry
 end
 
 def get_japanese_emoticon
