@@ -18,9 +18,9 @@ def get_japanese_emoticon(path, emoticon)
     if value[:english] == emoticon
       return_string = value[:japanese]
     end
-    binding.pry
   end
   return_string
+  binding.pry
 end
 
 def get_english_meaning(path, emoticon)
