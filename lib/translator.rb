@@ -6,7 +6,6 @@ def load_library(library)
     some_hash = {}
     some_other_var = {:english => emoticons[0], :japanese => emoticons[1]}
     some_hash[emotion] = some_other_var
-
   end
   binding.pry
 end
