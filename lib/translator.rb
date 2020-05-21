@@ -23,7 +23,7 @@ def get_english_meaning(path, emoticon)
       if inner_value == emoticon
         english_meaning = key
       end
-      if !inner_value == emoticon
+      if inner_value !== emoticon
         english_meaning = "Sorry, that emoticon was not found"
       end
     end
