@@ -20,6 +20,7 @@ def get_japanese_emoticon(path, emoticon)
     end
     binding.pry
   end
+  return_string
 end
 
 def get_english_meaning(path, emoticon)
