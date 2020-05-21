@@ -27,7 +27,6 @@ def get_english_meaning(path, emoticon)
       if inner_value == emoticon
         english_meaning = key
       end
-      binding.pry
     end
   end
   english_meaning
