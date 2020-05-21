@@ -2,7 +2,7 @@ require 'pry'
 require 'yaml'
 
 def load_library(library)
-  YAML.load_file(library).each do |meaning, emoticons|
+  emoticons = YAML.load_file(library).each do |meaning, emoticons|
     binding.pry
   end
 end
