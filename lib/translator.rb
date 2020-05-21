@@ -6,7 +6,7 @@ def load_library(library)
   fixed_emoticons_hash = YAML.load_file(library).map do |emotion, emoticons|
     emotes_paired = {:english => emoticons[0], :japanese => emoticons[1]}
     some_fixed_hash[emotion] = emotes_paired
-    binding.pry
+    #binding.pry
   end
   binding.pry
 end
